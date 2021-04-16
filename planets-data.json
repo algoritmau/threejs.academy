@@ -1,0 +1,34 @@
+[
+  {
+    "planet": "Mercury",
+    "radius": 5
+  },
+  {
+    "planet": "Venus",
+    "radius": 6
+  },
+  {
+    "planet": "Earth",
+    "radius": 7
+  },
+  {
+    "planet": "Mars",
+    "radius": 8
+  },
+  {
+    "planet": "Jupiter",
+    "radius": 12
+  },
+  {
+    "planet": "Saturn",
+    "radius": 16
+  },
+  {
+    "planet": "Uranus",
+    "radius": 22
+  },
+  {
+    "planet": "Neptun",
+    "radius": 18
+  }
+]
