@@ -6,9 +6,9 @@ import Icon from './Icon'
 
 export default function Header() {
   return (
-    <header className="w-full h-8 px-3 flex justify-between items-center">
+    <header className="w-full h-10 px-3 flex justify-between items-center">
       <Link href="/">
-        <a className="p-2 w-min flex justify-between items-center">
+        <a className="w-min p-1 -ml-1 flex justify-between items-center">
           <Logo />
         </a>
       </Link>
