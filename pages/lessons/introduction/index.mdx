@@ -1,0 +1,31 @@
+import { NextSeo } from 'next-seo'
+
+export default ({ children }) => (
+  <>
+    <NextSeo
+      title="Test - Three.js Academy"
+      description={`Learn how to build web applications with Three.js.`}
+      canonical="hhttps://threejs.academy/lessons"
+      openGraph={{
+        url: 'https://masteringnextjs.com/resources',
+        title: 'Next.js Resources - Books, Videos, Articles, Examples',
+        description: `A curated list of Next.js resources: books, videos, examples, articles about using Next.js.`,
+      }}
+    />
+    <article className="w-full">{children}</article>
+  </>
+)
+
+# Test page in mdx
+
+- 1.1 Introduction
+
+- 1.2 Responsivenessa
+
+- 1.3 Prerequisites
+
+- 1.4 Setup
+
+<div style={{ padding: '10px 30px', backgroundColor: 'tomato' }}>
+  <h2>Try making this heading have the color green</h2>
+</div>

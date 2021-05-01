@@ -1,6 +1,7 @@
-import '../styles/globals.sass'
 import { ThemeProvider } from 'next-themes'
 import Layout from '~/components/Layout'
+
+import '~/styles/globals.sass'
 
 function MyApp({ Component, pageProps }) {
   return (
