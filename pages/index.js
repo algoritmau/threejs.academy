@@ -1,15 +1,15 @@
 import Head from 'next/head'
-import styles from '~/styles/Home.module.css'
+import Hero from '~/components/Hero'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <>
       <Head>
         <title>Three.js Academy</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1>Home Page</h1>
-    </div>
+      <Hero />
+    </>
   )
 }

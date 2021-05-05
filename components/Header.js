@@ -13,9 +13,14 @@ export default function Header() {
         </a>
       </Link>
       <div className="flex w-3/4 justify-between items-center">
-        <form>
+        <form className="w-16 h-6 p-0.5">
           <label htmlFor="search">
-            <input id="search" type="text" placeholder="Search" />
+            <input
+              className="w-full h-full p-1 rounded-md"
+              id="search"
+              type="text"
+              placeholder="Search"
+            />
           </label>
         </form>
         <div className="w-10 h-5 flex justify-between items-center">
