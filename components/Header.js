@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router'
 import Link from 'next/link'
 
 import Logo from './Logo'
@@ -5,6 +6,13 @@ import ThemeToggle from './ThemeToggle'
 import Icon from './Icon'
 
 export default function Header() {
+  const router = useRouter()
+  const { locale } = router
+  const changeLanguage = (e) => {
+    const locale = e.target.value
+    router.push(router.pathname, router.asPath, { locale })
+  }
+
   return (
     <header className="w-full h-10 px-3 flex justify-between items-center">
       <Link href="/">
@@ -23,7 +31,19 @@ export default function Header() {
             />
           </label>
         </form>
-        <div className="w-10 h-5 flex justify-between items-center">
+        <div className="h-5 flex justify-between items-center">
+          <select
+            onChange={changeLanguage}
+            defaultValue={locale}
+            className="text-shadow-sm text-lg bg-transparent tracking-wide"
+          >
+            <option className="text-black" value="en">
+              en
+            </option>
+            <option className="text-black" value="es">
+              es
+            </option>
+          </select>
           <ThemeToggle />
           <a
             href="https://github.com/spaceinvadev/three.scholl"
