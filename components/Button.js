@@ -1,11 +1,13 @@
-const Button = ({ main, text }) => (
-  <button
-    className={`w-16 py-2 text-center rounded-lg text-white ${
-      main ? 'bg-gray-700' : 'bg-gray-900'
-    }`}
-  >
-    {text}
-  </button>
-)
+import CtaStyles from '~/styles/Cta.module.sass'
+
+const Button = ({ text }) => {
+  return (
+    <button
+      className={`${CtaStyles.cta} bg-white dark:bg-black text-black dark:text-white border-black dark:border-white`}
+    >
+      {text}
+    </button>
+  )
+}
 
 export default Button

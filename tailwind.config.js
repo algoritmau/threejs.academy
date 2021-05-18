@@ -7,19 +7,29 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      white: '#F6F7F7',
-      black: '#141414',
-      gray: colors.coolGray,
+      white: {
+        DEFAULT: '#FEFEFE',
+        dark: '#F9F9F9'
+      },
+      black: {
+        light: '#161616',
+        DEFAULT: '#080808',
+        dark: '#000'
+      },
+      gray: {
+        50: '#F9F9F9',
+        DEFAULT: '#818181'
+      }
     },
     fontFamily: {
       sans: ['Inter', 'sans-serif'],
-      mono: ["'MD IO 0.2'", 'monospace'],
+      mono: ["'MD IO 0.2'", 'monospace']
     },
     fontSize: {
-      '5xl': ['36px', '128%'],
+      '5xl': ['36px', '128%']
     },
     height: {
-      '64v': '64vh',
+      '64v': '64vh'
     },
     extend: {
       spacing: {
@@ -40,12 +50,12 @@ module.exports = {
         13: '10.4rem',
         14: '11.2rem',
         15: '12rem',
-        16: '12.8rem',
-      },
-    },
+        16: '12.8rem'
+      }
+    }
   },
   variants: {
-    extend: {},
+    extend: {}
   },
-  plugins: [],
+  plugins: []
 }
