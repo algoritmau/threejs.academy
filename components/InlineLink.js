@@ -1,31 +1,26 @@
 import Link from 'next/link'
+import { bool, node, string } from 'prop-types'
 import InlineLinkStyles from '~/styles/InlineLink.module.sass'
 
-const InlineLink = ({ isRawLink, isExternal, text, to }) => {
-  return isRawLink ? (
-    <Link
-      href={to}
-      target={isExternal && '_blank'}
-      rel={'_blank' && 'noreferrer'}
-    >
+const InlineLink = ({ isExternal, text, to, children }) => {
+  return (
+    <Link href={to}>
       <a
         className={InlineLinkStyles.link}
-        target={isExternal && '_blank'}
-        rel={'_blank' && 'noreferrer'}
+        target={isExternal ? '_blank' : null}
+        rel={isExternal ? 'noreferrer' : null}
       >
-        {text}
+        {text ? text : children}
       </a>
     </Link>
-  ) : (
-    <a
-      className={InlineLinkStyles.link}
-      href={to}
-      target={isExternal && '_blank'}
-      rel={'_blank' && 'noreferrer'}
-    >
-      {text}
-    </a>
   )
+}
+
+InlineLink.propTypes = {
+  children: node,
+  isExternal: bool.isRequired,
+  text: string,
+  to: string.isRequired
 }
 
 export default InlineLink

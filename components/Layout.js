@@ -1,11 +1,11 @@
-import Footer from './Footer'
 import Header from './Header'
+import Footer from './Footer'
 
 export default function Layout({ children }) {
   return (
-    <div className="bg-white dark:bg-black">
+    <div className="bg-white dark:bg-black px-3">
       <Header />
-      <main className="p-3">{children}</main>
+      <main>{children}</main>
       <Footer />
     </div>
   )
