@@ -18,7 +18,9 @@ module.exports = {
       },
       gray: {
         50: '#F9F9F9',
-        DEFAULT: '#818181'
+        DEFAULT: '#818181',
+        'lt-txt': '#767676',
+        'dt-txt': '#787878'
       }
     },
     fontFamily: {
@@ -31,7 +33,28 @@ module.exports = {
       'body-copy': ['16px', '20px'],
       'body-copy-medium': ['20px', '28px'],
       'body-copy-large': ['24px', '32px'],
-      '5xl': ['36px', '128%']
+      'heading-1-xs': ['3.5rem', '128%'],
+      'heading-1-s': ['4rem', '128%'],
+      'heading-1-m': ['4.8rem', '128%'],
+      'heading-1-l': ['5.6rem', '128%'],
+      'heading-1-xl': ['6.4rem', '128%'],
+      'heading-1-xxl': ['7.2rem', '128%']
+    },
+    screens: {
+      'phone-s': '375px',
+      'phone-m': '412px',
+      'tablet-xs': '600px',
+      'tablet-s': '768px',
+      'tablet-m': '800px',
+      'tablet-l': '960px',
+      'tablet-xl': '1024px',
+      'desktop-xs': '1280px',
+      'desktop-s': '1366px',
+      'desktop-m': '1440px',
+      'desktop-xm': '1536px',
+      'desktop-l': '1600px',
+      'desktop-xl': '1920px',
+      'desktop-xxl': '2560px'
     },
     height: {
       0.5: '0.4rem',

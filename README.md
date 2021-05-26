@@ -6,7 +6,19 @@ This is the repository of the [Three.js Academy](https://threejs.academy) projec
 
 <br>
 
-## TODOs
+## To Do
+
+[] Move MobileNav Toggle to the left on tablet mode
+
+[] Add Sidebar to Desktop mode
+
+[] Add Logo / Name to Sidebar
+
+[] Finish Hero
+
+[] Finish Header's Search Input
+
+[] Add Features section
 
 - Landing Page
 - 1: Introduction to Three.js
