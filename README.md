@@ -14,7 +14,7 @@ This is the repository of the [Three.js Academy](https://threejs.academy) projec
 
 [] Add Logo / Name to Sidebar
 
-[] Finish Hero
+- ~~Finish Hero~~
 
 [] Finish Header's Search Input
 

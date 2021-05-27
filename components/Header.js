@@ -14,7 +14,7 @@ export default function Header() {
   }
 
   return (
-    <header className="w-full h-10 flex justify-between items-center">
+    <header className="w-full h-12 tablet-l:h-16 flex justify-between items-center globalPaddingX">
       <Link href="/">
         <a className="w-min p-1 -ml-1 flex justify-between items-center">
           <Logo />

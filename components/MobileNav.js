@@ -18,7 +18,7 @@ const MobileNav = () => {
   return (
     <div className="tablet-l:hidden">
       <button
-        className={`w-7 h-7 bg-gray flex justify-center items-center rounded-full fixed bottom-3 tablet-s:bottom-7 right-3 tablet-xs:right-5 tablet-s:right-7 z-20 transition-all`}
+        className={`w-7 h-7 bg-gray flex justify-center items-center rounded-full fixed bottom-3 tablet-s:bottom-7 right-3 tablet-xs:right-5 tablet-s:right-7 z-30 transition-all`}
         onClick={() => setIsOpen(!isOpen)}
       >
         {isOpen ? <Icon name="cancel" /> : <Icon name="menu" />}
@@ -26,7 +26,7 @@ const MobileNav = () => {
       <nav
         className={`fixed top-0 ${
           isOpen ? 'left-0 flex flex-col gap-5' : '-left-full hidden'
-        } p-4 overflow-y-scroll bg-black dark:bg-white text-white dark:text-black w-3/4 tablet-xs:w-3/5 tablet-s:w-1/2 h-100v z-10 transition-all duration-300`}
+        } p-4 overflow-y-scroll bg-black dark:bg-white text-white dark:text-black w-3/4 tablet-xs:w-3/5 tablet-s:w-1/2 h-100v z-20 transition-all duration-300`}
       >
         {menuOptions.map((menuOption) => {
           const linkHref = `${menuOption.canonical}/${slugify(
@@ -64,7 +64,7 @@ const MobileNav = () => {
           isOpen
             ? 'left-3/4 tablet-xs:left-2/5 tablet-s:left-1/2 block'
             : '-left-full hidden'
-        }  bg-black bg-opacity-70 w-1/4 tablet-xs:w-2/5 tablet-s:w-1/2 h-100v z-10 transition-all duration-300`}
+        }  bg-black bg-opacity-70 w-1/4 tablet-xs:w-2/5 tablet-s:w-1/2 h-100v z-20 transition-all duration-300`}
       ></div>
     </div>
   )

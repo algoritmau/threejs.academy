@@ -13,8 +13,8 @@ module.exports = {
       },
       black: {
         light: '#161616',
-        DEFAULT: '#080808',
-        dark: '#000'
+        DEFAULT: '#090A0A',
+        dark: '#080808'
       },
       gray: {
         50: '#F9F9F9',
@@ -31,8 +31,8 @@ module.exports = {
       'body-copy-tiny': ['12px', '16px'],
       'body-copy-small': ['14px', '18px'],
       'body-copy': ['16px', '20px'],
-      'body-copy-medium': ['20px', '28px'],
-      'body-copy-large': ['24px', '32px'],
+      'body-copy-m': ['20px', '28px'],
+      'body-copy-l': ['24px', '32px'],
       'heading-1-xs': ['3.5rem', '128%'],
       'heading-1-s': ['4rem', '128%'],
       'heading-1-m': ['4.8rem', '128%'],
@@ -98,7 +98,12 @@ module.exports = {
         14: '11.2rem',
         15: '12rem',
         16: '12.8rem'
-      }
+      },
+      backgroundImage: (theme) => ({
+        'hero-pattern-mobile': "url('/img/michael-dziedzic-mobile.jpg')",
+        'hero-pattern-desktop': "url('/img/michael-dziedzic-desktop.jpg')",
+        'hero-pattern-desktop-xl': "url('/img/michael-dziedzic-desktop-xl.jpg')"
+      })
     }
   },
   variants: {
